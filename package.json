@@ -2,10 +2,14 @@
   "name": "pdf-maker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pdfkit": "^0.8.3",
+    "readline-sync": "^1.4.9"
+  }
 }
