@@ -11,7 +11,7 @@ doc.pipe(fs.createWriteStream('output.pdf'));
 for (i in dataTargets) {
   doc.addPage()
   doc.image('assets/WSU-Page-Header.png', 0, 0, { width: 625, height: 75 });
-  doc.fontSize(20).text(dataTargets[i].name, 90, 80, { align: 'center' });
+  doc.fontSize(20).text(dataTargets[i].name, 85, 80, { align: 'center' });
   doc.fontSize(12).text(dataTargets[i].summary, 10, 105, { align: 'left', width: 595 });
   doc.image(dataTargets[i].mainPic, 80, 175, { width: 450 });
   doc.fontSize(6).text(`Reservoir Condition Graph from http://cdec.water.ca.gov/cgi-progs/products/${dataTargets[i].urlEnding}.pdf`, 80, 505, { align: 'center' });
